@@ -56,7 +56,7 @@
 #
 # * `service_path`
 # Where to create the service definition.
-#
+#/releases/gitea/1.9.4/gitea-1.9.4-linux-armv7l
 # * `service_provider`
 # Which service provider do we use?
 #
@@ -147,6 +147,9 @@ class gitea::install (
       }
       /(x86)/: {
         $arch = '386'
+      }
+      /(armv7l)/: {
+        $arch = 'arm-6'
       }
       default: {
         $arch = $::architecture
