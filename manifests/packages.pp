@@ -23,7 +23,7 @@
 # Copyright 2016-2019 Daniel S. Reichenbach <https://kogitoapp.com>
 #
 class gitea::packages (
-  Enum['latest','present','absent'] $dependencies_ensure = $gitea::dependencies_ensure,
+  Enum['latest','present','absent','installed'] $dependencies_ensure = $gitea::dependencies_ensure,
   Array[String] $dependencies = $gitea::dependencies,
   ) {
 
