@@ -106,7 +106,7 @@
 #
 class gitea (
   Enum['present','absent'] $package_ensure,
-  Enum['latest','present','absent'] $dependencies_ensure,
+  Enum['latest','present','absent','installed'] $dependencies_ensure,
   Array[String] $dependencies,
 
   Boolean $manage_user,
