@@ -139,7 +139,7 @@ class gitea (
   String $robots_txt,
   ) {
 
-#  class { '::gitea::packages': }
+  class { '::gitea::packages': }
   class { '::gitea::user': }
   class { '::gitea::install': }
 
